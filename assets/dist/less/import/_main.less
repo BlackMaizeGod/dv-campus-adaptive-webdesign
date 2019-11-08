@@ -1,8 +1,8 @@
 /* General styles */
 .wrapper {
-    margin: 0 auto;
-    min-width: 479px;
-    overflow: hidden;
+  margin: 0 auto;
+  min-width: 479px;
+  overflow: hidden;
 }
 
 .bars {
@@ -93,6 +93,7 @@ li:hover:before {
 }
 
 .carousel-center-content {
+  max-width: 762px;
   width: 67%;
   max-height: 23%;
   padding: 0;
@@ -147,7 +148,7 @@ li:hover:before {
   width: 100%;
   background: @source-red;
 
-  h1{
+  h1 {
     position: absolute;
     width: 100%;
     transform: translate(-50% -50%);
@@ -169,7 +170,7 @@ li:hover:before {
   font: 26px "Ubuntu", serif;
   color: #484848;
   font-weight: 500;
-  border-bottom: 1.5px solid #7d8a0b;
+  border-bottom: 1px solid #7d8a0b;
 }
 
 .main-content {
@@ -183,7 +184,7 @@ li:hover:before {
   }
 
   p {
-    margin:0 25px 29px;
+    margin: 0 25px 29px;
     line-height: 25px;
     color: #9d9c9c;
     font-weight: 400;
@@ -230,18 +231,31 @@ li:hover:before {
   }
 }
 
-.features-content:last-child{
-  margin-bottom: 49px;
+.features-content:nth-child(2) {
+  margin: 30px 0 0 0;
+}
+
+.features-content:nth-child(3) {
+  margin: 42px 0 0 0;
+}
+
+.features-content:nth-child(4) {
+  margin: 40px 0 0 0;
+}
+
+.features-content:last-child {
+  margin-bottom: 47px;
 }
 
 .recent-content {
-  margin: 44px 45px 0 48px;
+  margin: 38px 45px 0 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  h1 {
-    margin-bottom: 27px;
+  h3 {
+    font-weight: 900;
+    margin-bottom: 20px;
   }
 
   p {
@@ -249,128 +263,172 @@ li:hover:before {
     line-height: 25px;
     color: #9d9c9c;
     text-align: center;
-    margin: 0 0 87px;
+    margin: 0 0 80px;
   }
 }
 
 .recent-content-width {
   max-width: 250px;
   width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 0 60px 0 62px
 }
 
- .alt {
-   margin: -4px 0 0 0;
-   background: #EEEEEE;
-   padding: 0 12px 0;
+.alt {
+  margin: -4px 0 0 0;
+  background: #EEEEEE;
+  padding: 0 12px 0;
 
-   h4 {
-     padding: 6px 0 6px 0;
-     color: #fe5c32;
-     font: 18px "Ubuntu", serif;
-     border-bottom: 1px solid #7d8a0b;
-   }
+  h4 {
+    padding: 4px 0 6px 0;
+    color: #fe5c32;
+    font: 24px "Ubuntu", serif;
+    border-bottom: 1px solid #7d8a0b;
+  }
 
-   p {
-     font: 16px "Ubuntu", serif;
-     line-height: 18px;
-     color: #605f5f;
-     font-weight: 400;
-     text-align: center;
-     padding-bottom: 8px;
-   }
+  p {
+    font: 16px "Ubuntu", serif;
+    color: #605f5f;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 60px;
+    line-height: 18px;
+  }
 
- }
+}
 
- .images-layouts:last-child {
-   margin-bottom: 50px;
- }
+.images-layouts:last-child {
+  margin-bottom: 50px;
+}
 
- .red {
+.red {
   color: @light-red;
- }
- .talk-to-us {
-   background: #7a7a7a;
-   text-align: center;
-   color: white;
-   padding: 93px 36px 83px 26px;
+}
 
-   .uppercase {
-     text-transform: uppercase;
-   }
+.talk-to-us {
+  background: #7a7a7a;
+  text-align: center;
+  color: white;
+  padding: 93px 0 83px 0;
 
-   h1 {
-     line-height: 18px;
-     color: #ffffff;
-     font: 60px "Ubuntu", serif;
-     font-weight: 400;
-     text-align: center;
-     margin: 0 auto 61px auto;
-   }
-   p {
-     line-height: 25px;
-     color: #ffffff;
-     font: 24px "PT Sans", serif;
-     text-align: center;
-   }
- }
+  .uppercase {
+    text-transform: uppercase;
+  }
 
- .contact-us {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   margin: 68px auto 116px auto;
- }
+  h1 {
+    line-height: 18px;
+    color: #ffffff;
+    font: 60px "Ubuntu", serif;
+    font-weight: 400;
+    margin: 0 auto 41px auto;
+  }
 
- .contact-us-content {
+  p {
+    color: #ffffff;
+    margin: 0 25px;
+    font: 24px 'PT Sans', serif;
+    line-height: 25px;
+  }
+}
 
-   h1 {
-     margin: 0 auto 0 auto;
-     color: #484848;
-     font: 32px Arial;
-     border-bottom: 3px solid #7d8a0b ;
-   }
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px auto 85px auto;
+}
 
-   p {
-     font: 16px Arial;
-     color: #9d9c9c;
-     margin: 65px auto 0 auto;
-   }
- }
+.contact-us-content {
 
- .contact-detail {
-   margin: 80px auto 0 auto;
+  h2 {
+    position: relative;
+    margin: 0 auto 0 auto;
+    max-width: fit-content;
+    width: 100%;
+    color: #484848;
+    font: 48px "Ubuntu", serif;
+    font-weight: 500;
 
-    h1 {
-      margin: 0 auto 87px auto;
-      width: fit-content;
-      font: 30px Arial;
-      color: #484848;
-      border-bottom: 3px solid #7d8a0b;
-    }
- }
+  }
 
- .row {
-   display: flex;
-   flex-direction: row;
-   text-align: left;
-   margin: 0 auto 50px auto;
+  h2:before {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    margin: 0 auto 0 auto;
+    border-bottom: 1px solid #7d8a0b;
+    max-width: 90%;
+    width: 100%;
+  }
 
-   i {
-     font-size: 24px;
-     margin: 0 45px 0 0;
-     color: #f27554;
-   }
+  p {
+    color: #9d9c9c;
+    font: 24px "Ubuntu", serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 62px 22px 0 22px;
+    line-height: 25px;
+  }
+}
 
-   h5 {
-     font: 20px Arial;
-     color: #9d9c9c;
-   }
- }
+.layer-45 {
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: 520px;
+  }
+}
 
- .row:last-child {
-   margin-bottom: 30px;
- }
+.contact-detail {
+  margin: 66px auto 0 auto;
+
+  h2 {
+    position: relative;
+    margin: 0 auto 85px auto;
+    color: #484848;
+    font: 48px "Ubuntu",serif;
+    font-weight: 500;
+  }
+
+  h2:before {
+    content: "";
+    position: absolute;
+    top: 1.3em;
+    left: 2.5em;
+    border-bottom: 1px solid #7d8a0b;
+    max-width: 42%;
+    width: 100%;
+  }
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 0 50px 34px 55px;
+
+  i {
+    font-size: 28px;
+    margin: 6px 40px 0 0;
+    color: #f27554;
+  }
+
+  h5 {
+    margin: 5px 0 0 0;
+    color: #9d9c9c;
+    font:  28px "Ubuntu", serif;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
+.row:last-child {
+  i {
+    margin: 34px 50px 0 0;
+  }
+  margin-bottom: 30px;
+}
 
 .submit-section {
   padding: 0 10px 150px 12px;
@@ -384,14 +442,15 @@ input {
   border: none;
   margin-bottom: 10px;
   padding: 0 15px 0 15px;
- }
+}
 
 input::placeholder {
   font: 12px Arial;
 }
+
 textarea {
   font: 12px Arial;
-  margin: 0 0 20px 0;
+  margin: 0 0 23px 0;
   padding: 15px;
   background: #f0f0f0;
   width: 90%;
@@ -399,23 +458,28 @@ textarea {
 }
 
 .submit {
+  color: #ffffff;
+  font: 20px "PT Sans", serif;
   background: #f27554;
-  color: white;
   border-radius: 0.25rem;
-  width: 60%;
+  max-width: 60%;
+  width: 100%;
+  height: 41px;
 }
 
 .copyright {
   height: 55px;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 95px auto;
   text-align: center;
   background: #f27554;
 
   h5 {
-    color: white;
-    font: 12px Arial;
+    color: #ffffff;
+    font: 18px "PT Sans", serif;
+    text-align: center;
     line-height: 55px;
   }
+
 }
 
 //@media  screen and (min-width: 768px) {
