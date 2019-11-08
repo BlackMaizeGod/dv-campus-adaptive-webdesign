@@ -1,7 +1,7 @@
 /* General styles */
 .wrapper {
   margin: 0 auto;
-  min-width: 479px;
+  max-width: 768px;
   overflow: hidden;
 }
 
@@ -25,32 +25,8 @@
   }
 }
 
-li {
-  text-transform: uppercase;
-  margin: 0 0 0 10%;
-  position: relative;
-  z-index: 4;
-  width: 100%;
-  text-align: center;
-}
-
-.a-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-li:hover:before {
-  content: '';
-  color: @light-red;
-  text-align: center;
-  position: absolute;
-  left: 45%;
-  margin: 0 25% 0 0;
-  right: auto;
-  top: 12px;
-  border: 7px solid transparent;
-  border-top: 4px solid @light-red;
-  border-radius: initial;
+.navigation {
+  display: none;
 }
 
 .carousel {
@@ -125,6 +101,10 @@ li:hover:before {
   opacity: 0.4;
   color: #ffffff;
   padding: 6px 0 6px 0;
+}
+
+.psd {
+  display: none;
 }
 
 .carousel-row:first-child {
@@ -482,153 +462,9 @@ textarea {
 
 }
 
-//@media  screen and (min-width: 768px) {
-//  .brush,
-//  .small-header,
-//  .contact-us h1,
-//  .contact-detail h1{
-//    font: 42px Arial;
-//    font-weight: bold;
-//  }
-//
-//  @carousel-background-width: 470px;
-//
-//  .body {
-//    background: black;
-//  }
-//  .wrapper {
-//    max-width: 772px;
-//  }
-//
-//  .bars {
-//    display: none;
-//  }
-//
-//  .brush {
-//    margin: 28px 66px 33px 46px;
-//    justify-content: flex-start;
-//  }
-//
-//  li {
-//    max-width: fit-content;
-//  }
-//
-//  li:hover {
-//    border-bottom: 2.5px Solid @source-red;
-//  }
-//
-//  li:hover:before {
-//    top: 18px;
-//    left: 40%;
-//  }
-//
-//  .carousel {
-//    width: 100%;
-//  }
-//
-//  .carousel-background {
-//    height: 48px;
-//    width: @carousel-background-width;
-//  }
-//  .carousel-background:first-child {
-//    margin-top: 211px;
-//
-//  }
-//  .carousel-background:last-child {
-//    width: 700px;
-//  }
-//
-//  .carousel-content {
-//    font: 22px Arial;
-//    font-weight: bolder;
-//    top: 68%;
-//  }
-//  .carousel-content:last-child {
-//    color: #d8dbdb;
-//    top: 88%;
-//  }
-//
-//  .corousel-footer {
-//    font: 18px Arial;
-//    font-weight: bold;
-//
-//    h1 {
-//      span {
-//        text-decoration: underline;
-//      }
-//    }
-//  }
-//
-//  .redLine {
-//    display: none;
-//  }
-//
-//  .main-content {
-//    h1 {
-//      margin: 47px auto 40px auto;
-//    }
-//  }
-//  .content-position {
-//    display: flex;
-//    flex-direction: row;
-//    flex-wrap: wrap;
-//  }
-//
-//  .features-content {
-//    display: block;
-//    margin: 50px 100px 0 100px;
-//    width: calc(100% * (1/2) - 100px - 100px);
-//
-//    p {
-//      text-align: left;
-//    }
-//  }
-//
-//  .recent-content {
-//    flex-direction: row;
-//    justify-content: space-between;
-//    max-width: 580px;
-//    flex-wrap: wrap;
-//  }
-//
-//  .images-layouts {
-//    margin: 50px 0 0 0;
-//    width: fit-content;
-//  }
-//
-//  .layer-45 {
-//    margin: auto;
-//    max-width: 435px;
-//    img {
-//      width: 100%;
-//    }
-//  }
-//
-//  .contact-detail {
-//    position: relative;
-//    flex-wrap: wrap;
-//    h1 {
-//      display: block;
-//      width: 100%;
-//      border-bottom: none;
-//      margin-bottom: 150px;
-//    }
-//
-//    display: flex;
-//    flex-direction: row;
-//  }
-//
-//  .row {
-//    max-width: 50%;
-//  }
-//  .row:last-child {
-//    top: 100px;
-//    width: 100%;
-//    left: 30%;
-//    position: absolute;
-//  }
-//
-//}
+@media  screen and (min-width: 768px) {
+ @import '_min-768';
+}
 
 
 
