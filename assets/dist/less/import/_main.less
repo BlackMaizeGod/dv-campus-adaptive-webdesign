@@ -28,7 +28,7 @@ textarea {
   display: flex;
   justify-content: center;
   margin: 12px auto 75px auto;
-  color: #4c4c4b;
+  color: @darkgrey;
   font: 72px "PT Sans", sans-serif;
 
   span {
@@ -58,7 +58,7 @@ textarea {
 
 .btn {
   font-size: 36px;
-  color: white;
+  color: @white;
   opacity: 0.25;
   background: none;
   border: none;
@@ -85,7 +85,7 @@ textarea {
   max-height: 23%;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
@@ -95,13 +95,13 @@ textarea {
 
 .carousel-row {
   position: relative;
-  font: 18px 'Ubuntu';
-  color: #eff7f8;
+  font: 18px @ubuntu;
+  color: @white;
   font-weight: 500;
   margin: 0 auto 0 auto;
 
   h4 {
-    background: rgba(255, 255, 255, 0.4);
+    background: @white-translucent;
     padding: 6px 0 6px 0;
   }
 }
@@ -117,42 +117,45 @@ textarea {
 
 .carousel-footer {
   text-align: center;
-  font: 14px 'Ubuntu', serif;
+  font: 14px @ubuntu;
   color: #fffffc;
   font-weight: 400;
   width: 100%;
   padding: 20px 0;
   background: @source-red;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  h1 {
+  h5 {
     line-height: 24px;
+  }
 
-    a {
-      color: #fffffc;
-      font-size: 17px;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
+  a {
+    color: #fffffc;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
 
-    a:hover {
-      text-decoration: underline;
-      text-decoration-color: rgba(255, 255, 255, 0.4);
-      cursor: pointer;
-    }
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: @white-translucent;
+    cursor: pointer;
   }
 }
 
 .small-header {
   margin: 0 auto 0 auto;
   padding-bottom: 2px;
-  font: 26px "Ubuntu", serif;
+  font: 26px @ubuntu;
   color: #484848;
   font-weight: 500;
-  border-bottom: 1px solid #7d8a0b;
+  border-bottom: @h-underline;
 }
 
 .main-content {
-  font: 18px "Ubuntu", serif;
+  font: 18px @ubuntu;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,7 +163,7 @@ textarea {
   p {
     margin: 0 25px;
     line-height: 25px;
-    color: #9d9c9c;
+    color: @grey;
     font-weight: 400;
     text-align: center;
   }
@@ -174,7 +177,7 @@ textarea {
 .brush-layout {
   margin: 0 auto 0 auto;
   padding: 40px 0 29px 0;
-  max-width: 590px;
+  max-width: @tablet-content-width;
   width: 100%;
   text-align: center;
 
@@ -205,8 +208,8 @@ textarea {
 
   h3 {
     margin: 0 auto;
-    font: 24px "PT Sans", sans-serif;
-    color: #2e2e2e;
+    font: 24px @secondary;
+    color: @black;
   }
 
   p {
@@ -236,9 +239,9 @@ textarea {
   }
 
   p {
-    font: 18px "PT Sans", serif;
+    font: 18px @secondary;
     line-height: 25px;
-    color: #9d9c9c;
+    color: @grey;
     text-align: center;
     margin: 0 auto 0 auto;
   }
@@ -259,6 +262,8 @@ textarea {
 }
 
 .alt {
+  max-width: 226px;
+  width: 100%;
   margin: -4px 0 0 0;
   background: #EEEEEE;
   padding: 0 12px 0;
@@ -266,8 +271,8 @@ textarea {
   h4 {
     text-align: center;
     padding: 4px 0 4px 0;
-    font: 24px "Ubuntu", serif;
-    border-bottom: 1px solid #7d8a0b;
+    font: 24px @ubuntu;
+    border-bottom: @h-underline;
 
     a {
       color: #fe5c32;
@@ -275,7 +280,7 @@ textarea {
   }
 
   p {
-    font: 16px "Ubuntu", serif;
+    font: 16px @ubuntu;
     color: #605f5f;
     font-weight: 400;
     text-align: center;
@@ -302,7 +307,7 @@ textarea {
   h1 {
     line-height: 18px;
     color: #ffffff;
-    font: 60px "Ubuntu", serif;
+    font: 60px @ubuntu;
     font-weight: 400;
     margin: 0 auto 41px auto;
   }
@@ -332,8 +337,8 @@ textarea {
     margin: 0 auto 0 auto;
     max-width: fit-content;
     width: 100%;
-    color: #484848;
-    font: 42px "Ubuntu", serif;
+    color: @black;
+    font: 42px @ubuntu;
     font-weight: 500;
 
   }
@@ -343,13 +348,13 @@ textarea {
     position: absolute;
     top: 1.2em;
     margin: 0 auto 0 auto;
-    border-bottom: 1px solid #7d8a0b;
+    border-bottom: @h-underline;
     width: 100%;
   }
 
   p {
-    color: #9d9c9c;
-    font: 22px "Ubuntu", serif;
+    color: @grey;
+    font: 22px @ubuntu;
     font-weight: 400;
     text-align: center;
     margin: 62px 22px 0 22px;
@@ -377,8 +382,8 @@ textarea {
     position: relative;
     text-align: center;
     margin: 0 0 85px 0;
-    color: #484848;
-    font: 42px "Ubuntu", serif;
+    color: @black;
+    font: 42px @ubuntu;
     font-weight: 500;
   }
 
@@ -387,9 +392,9 @@ textarea {
     position: absolute;
     top: 1.3em;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 1px solid #7d8a0b;
-    max-width: 42%;
+    transform: @center-position;
+    border-bottom: @h-underline;
+    max-width: 220px;
     width: 100%;
   }
 
@@ -403,14 +408,13 @@ textarea {
 
   i {
     font-size: 28px;
-    margin: 6px 30px 0 0;
-    color: #f27554;
+    margin: 0 30px 0 0;
+    color: @light-red-2;
   }
 
   h5 {
-    margin: 5px 0 0 0;
-    color: #9d9c9c;
-    font: 22px "Ubuntu", serif;
+    color: @grey;
+    font: 22px @ubuntu;
     font-weight: 400;
     line-height: 28px;
   }
@@ -432,7 +436,7 @@ textarea {
 input {
   width: 90%;
   height: 50px;
-  background: #f0f0f0;
+  background: @white-2;
   border: none;
   margin-bottom: 10px;
   padding: 0 15px 0 15px;
@@ -447,15 +451,15 @@ textarea {
   font: 12px Arial;
   margin: 0 0 23px 0;
   padding: 15px;
-  background: #f0f0f0;
+  background: @white-2;
   width: 90%;
   border: none;
 }
 
 .submit {
-  color: #ffffff;
-  font: 20px "PT Sans", serif;
-  background: #f27554;
+  color: @white;
+  font: 20px @secondary;
+  background: @light-red-2;
   border-radius: 0.25rem;
   max-width: 60%;
   width: 100%;
@@ -466,11 +470,11 @@ textarea {
   height: 55px;
   margin: 0 auto 95px auto;
   text-align: center;
-  background: #f27554;
+  background: @light-red-2;
 
   h5 {
-    color: #ffffff;
-    font: 18px "PT Sans", serif;
+    color: @white;
+    font: 18px @secondary;
     text-align: center;
     line-height: 55px;
   }
@@ -480,9 +484,3 @@ textarea {
 @media screen and (min-width: 768px) {
   @import '_min-768';
 }
-
-
-
-
-
-

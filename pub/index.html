@@ -20,17 +20,20 @@
         <div class="brush">
             <h1><span>UI</span>Brush</h1>
         </div>
-        <ul class="navigation">
-            <li><a href="javascript:void(0)">Home</a></li>
-            <li><a href="javascript:void(0)">About Us</a></li>
-            <li><a href="javascript:void(0)">Services</a></li>
-            <li><a href="javascript:void(0)">Portfolio</a></li>
-            <li><a href="javascript:void(0)">Contact Us</a></li>
-        </ul>
+        <div class="wrapper-for-navigation">
+            <ul class="navigation">
+                <li><a href="javascript:void(0)">Home</a></li>
+                <li><a href="javascript:void(0)">About Us</a></li>
+                <li><a href="javascript:void(0)">Services</a></li>
+                <li><a href="javascript:void(0)">Portfolio</a></li>
+                <li><a href="javascript:void(0)">Contact Us</a></li>
+            </ul>
+        </div>
         <div class="carousel">
-            <img class="carousel"
-                 src="./images/carousel.png"
-                 alt="Oops...">
+            <picture class="carousel">
+                <source srcset="./images/carousel-768.png" media="(min-width: 768px)">
+                <img src="./images/carousel.png" alt="Oops" class="carousel">
+            </picture>
             <div class="carousel-nav">
                 <button class="fas fa-chevron-left btn btn-left"></button>
                 <button class="fas fa-chevron-right btn btn-right"></button>
@@ -46,10 +49,10 @@
 
         </div>
         <div class="carousel-footer">
-            <h1>Lorem ipsum dolor sit amet <a href="javascript:void(0)">consectetuer adipiscing elit</a></h1>
+            <h5>Lorem ipsum dolor sit amet&ensp;</h5>
+            <a href="javascript:void(0)">consectetuer adipiscing elit</a>
         </div>
     </header>
-
     <div class="main-content">
         <div class="brush-layout">
             <h3 class="small-header">UIBrush</h3>
@@ -108,42 +111,44 @@
                     ing elit, sed do eiusmod tempor
                 </p>
             </div>
-            <div class="images-layouts">
-                <div class="recent-content-width">
-                    <img src="./images/one.png" alt="">
+            <div class="images-wrapper">
+                <div class="images-layouts">
+                    <div class="recent-content-width">
+                        <img src="./images/one.png" alt="">
+                        <div class="alt">
+                            <h4>
+                                <a href="javascript:void(0)">Portfolio One</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-layouts">
+                    <img src="./images/two.png" alt="">
                     <div class="alt">
                         <h4>
-                            <a href="javascript:void(0)">Portfolio One</a>
+                            <a href="javascript:void(0)">Portfolio Two</a>
                         </h4>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-            </div>
-            <div class="images-layouts">
-                <img src="./images/two.png" alt="">
-                <div class="alt">
-                    <h4>
-                        <a href="javascript:void(0)">Portfolio Two</a>
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <div class="images-layouts">
+                    <img src="./images/three.png" alt="">
+                    <div class="alt">
+                        <h4>
+                            <a href="javascript:void(0)"> Portfolio Three </a>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="images-layouts">
-                <img src="./images/three.png" alt="">
-                <div class="alt">
-                    <h4>
-                        <a href="javascript:void(0)"> Portfolio Three </a>
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="images-layouts">
-                <img src="./images/four.png" alt="">
-                <div class="alt">
-                    <h4>
-                        <a href="javascript:void(0)">Portfolio Four</a>
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <div class="images-layouts">
+                    <img src="./images/four.png" alt="">
+                    <div class="alt">
+                        <h4>
+                            <a href="javascript:void(0)">Portfolio Four</a>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,7 +202,7 @@
             <div class="row">
                 <i class="fas fa-map-marker-alt"></i>
                 <h5>
-                    No.235, New St, 25th Sector,London,
+                    No.235, New St, 25th Sector, London,
                     England
                 </h5>
             </div>
